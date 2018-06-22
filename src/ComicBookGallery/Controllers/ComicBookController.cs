@@ -8,9 +8,13 @@ namespace ComicBookGallery.Controllers
 {
     public class ComicBookController : Controller
     {
-        public string Detail()
+        public ActionResult Detail()
         {
-            return "Hello from the comic books controller!";
+            //ActionResult is the base class for ContentResult and RedirectResult.
+            //return new RedirectResult("/"); root of website
+            return Content("Hello from the comic books controller!");
+            
+            
         }
     }
 }
